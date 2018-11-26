@@ -1,6 +1,7 @@
+from django.urls import path
 from .views import Autolist
 
 
 urlpatterns = [
-    path('autolist', Autolist.as_view()),
+    path('registro_pagamento', Autolist.as_view()),
 ]
