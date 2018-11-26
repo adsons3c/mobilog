@@ -1,5 +1,5 @@
-<h1>Lista de AUTOS de Infração</h1>
+<h1>Lista de Registro de Pagamentos</h1>
 
 {% for auto in object_list %}
-    <ul>{{ auto }}</ul>
+    <h1><a href="{% url 'log:registro_detalhes' auto.pk%}">{{ auto }}</a></h1>
 {% endfor %}

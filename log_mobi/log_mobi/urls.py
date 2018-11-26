@@ -19,6 +19,6 @@ from log.views import Autolist
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('log.urls')),
+    path('', include('log.urls', namespace='log')),
     # path('autolist', Autolist.as_view()),
 ]
